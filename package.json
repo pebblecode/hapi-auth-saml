@@ -20,10 +20,20 @@
   "engines": {
     "node": ">=0.10.30"
   },
+  "peerDependencies": {
+    "hapi": ">=6.x.x"
+  },
+  "devDependencies": {
+    "hapi": "^7.1.1"
+  },
   "author": "Tu Tak Tran <ttt@pebblecode.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pebblecode/hapi-auth-saml/issues"
   },
-  "homepage": "https://github.com/pebblecode/hapi-auth-saml"
+  "homepage": "https://github.com/pebblecode/hapi-auth-saml",
+  "dependencies": {
+    "boom": "^2.6.0",
+    "lodash": "^2.4.1"
+  }
 }
