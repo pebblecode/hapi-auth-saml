@@ -1,0 +1,15 @@
+# MacOS
+.DS_Store
+
+# NPM files
+node_modules
+npm-debug.log
+
+# Built files
+/dist/
+.sass-cache
+
+/temp/
+
+# Ignore examples for now
+examples/secrets.js
