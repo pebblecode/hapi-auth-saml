@@ -24,9 +24,8 @@ server.pack.register(SamlAuth, function (err) {
     method: 'GET',
     path: '/',
     config: {
-      auth: 'ping',
       handler: function(request, reply) {
-        reply("<a href='/login'>Login</a>");
+        reply("<h1>Homepage (no auth)</h1><a href='/login'>Login</a>");
       }
     }
   });
