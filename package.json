@@ -4,6 +4,7 @@
   "description": "Hapi.js scheme for SAML authentication",
   "main": "index.js",
   "scripts": {
+    "ping": "node examples/ping-federate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

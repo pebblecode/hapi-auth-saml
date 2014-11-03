@@ -13,3 +13,7 @@ Create a `examples/secrets.js` (see code for what is required).
 Run example
 
     node examples/ping-federate.js
+
+Or run with npm
+
+    npm run ping
