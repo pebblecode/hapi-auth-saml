@@ -11,14 +11,20 @@ var SamlAuth = require('../lib');
 var options = require('./secrets');
 
 server.pack.register(SamlAuth, function (err) {
-
-  server.auth.strategy('ping', 'saml', {
+  var samlOptions = {
     path: options.path,
     protocol: options.protocol,
-    entryPoint: options.path,
+    entryPoint: options.entryPoint,
     additionalEntryPointParams: options.additionalEntryPointParams,
     cert: options.cert
-  });
+  };
+
+  if (options.issuer) {
+    samlOptions.issuer = options.issuer;
+  }
+
+  server.auth.strategy('ping', 'saml', samlOptions);
+
 
   server.route({
     method: 'GET',
@@ -35,6 +41,18 @@ server.pack.register(SamlAuth, function (err) {
     path: '/login',
     config: {
       auth: 'ping',
+      handler: function(request, reply) {
+        reply(request.auth.credentials);
+      }
+    }
+  });
+
+  server.route({
+    method: '*',
+    path: '/login/callback',
+    config: {
+      // No auth, otherwise it would be an infinite
+      // loop
       handler: function(request, reply) {
         reply(request.auth.credentials);
       }
