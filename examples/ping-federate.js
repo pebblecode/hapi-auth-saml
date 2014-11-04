@@ -47,18 +47,6 @@ server.pack.register(SamlAuth, function (err) {
     }
   });
 
-  server.route({
-    method: '*',
-    path: '/login/callback',
-    config: {
-      // No auth, otherwise it would be an infinite
-      // loop
-      handler: function(request, reply) {
-        reply(request.auth.credentials);
-      }
-    }
-  });
-
   server.start(function(err) {
     console.log('Server started at:', server.info.uri);
   });
