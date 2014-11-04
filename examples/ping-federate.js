@@ -37,7 +37,7 @@ server.pack.register(SamlAuth, function (err) {
   });
 
   server.route({
-    method: '*',
+    method: 'GET',
     path: '/login',
     config: {
       auth: 'ping',
