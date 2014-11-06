@@ -28,6 +28,7 @@ server.pack.register(SamlAuth, function (err) {
     verifyFunc: function(profile, done) {
       // Can check profile contains the correct
       // information here
+      server.log(['debug', 'verifyFunc'], profile);
 
       return done(null, profile);
     }
