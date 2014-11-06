@@ -16,7 +16,21 @@ server.pack.register(SamlAuth, function (err) {
     protocol: options.protocol,
     entryPoint: options.entryPoint,
     additionalEntryPointParams: options.additionalEntryPointParams,
-    cert: options.cert
+    cert: options.cert,
+    /**
+     * Check whether profile returned contains the
+     * correct information
+     *
+     * @param  {Object}   profile
+     * @param  {function(err, profile, info)} done
+     * @return {function} `done` function
+     */
+    verifyFunc: function(profile, done) {
+      // Can check profile contains the correct
+      // information here
+
+      return done(null, profile);
+    }
   };
 
   if (options.issuer) {
