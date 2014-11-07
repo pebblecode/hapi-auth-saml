@@ -2,6 +2,16 @@
 
 Hapi.js scheme for SAML authentication
 
+## Development
+
+Install pre-requisites
+
+    npm install
+
+Run `gulp` for linting
+
+    gulp
+
 ## Examples
 
 Install pre-requisites
