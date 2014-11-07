@@ -1,6 +1,6 @@
 {
   "name": "hapi-auth-saml",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Hapi.js scheme for SAML authentication",
   "main": "index.js",
   "scripts": {
