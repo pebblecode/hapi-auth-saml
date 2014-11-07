@@ -57,7 +57,7 @@ server.pack.register(SamlAuth, function (err) {
     config: {
       auth: 'ping',
       handler: function(request, reply) {
-        reply(request.auth.credentials);
+        reply(request.auth);
       }
     }
   });
