@@ -20,9 +20,9 @@ Install pre-requisites
 
 Create a `examples/secrets.js` (see code for what is required).
 
-Run example
+Run example (note: needs sudo for port 80)
 
-    node examples/ping-federate.js
+    sudo node examples/ping-federate.js
 
 Or run with npm
 

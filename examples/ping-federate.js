@@ -3,7 +3,7 @@
  */
 var Hapi = require('hapi');
 
-var port = 7771;
+var port = 80;
 var server = Hapi.createServer(port);
 
 var SamlAuth = require('../lib');
