@@ -1,6 +1,9 @@
 # MacOS
 .DS_Store
 
+# IDE files
+.idea
+
 # NPM files
 node_modules
 npm-debug.log
