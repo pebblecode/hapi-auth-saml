@@ -1,49 +1,47 @@
 {
   "name": "hapi-auth-saml",
-  "version": "0.0.21",
-  "description": "Hapi.js scheme for SAML authentication",
-  "main": "index.js",
-  "scripts": {
-    "ping": "node examples/ping-federate.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.0",
+  "description": "SAML authentication scheme for Hapijs",
+  "keywords": ["saml", "hapi", "node", "login", "authentication"],
   "repository": {
     "type": "git",
     "url": "git@github.com:pebblecode/hapi-auth-saml.git"
   },
-  "keywords": [
-    "saml",
-    "hapi",
-    "node",
-    "login",
-    "authentication"
-  ],
-  "engines": {
-    "node": ">=0.10.30"
-  },
-  "peerDependencies": {
-    "hapi": ">=6.x.x"
-  },
-  "devDependencies": {
-    "hapi": "^7.1.1",
-    "gulp": "^3.8.10",
-    "gulp-jshint": "^1.9.0",
-    "jshint-stylish": "^1.0.0"
-  },
-  "author": "Tu Tak Tran <ttt@pebblecode.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pebblecode/hapi-auth-saml/issues"
   },
   "homepage": "https://github.com/pebblecode/hapi-auth-saml",
+  "author": "Pebble{code} <opensource@pebblecode.com>",
+  "contributors": [{
+    "name": "Tu Tak Tran",
+    "email": "ttt@pebblecode.com"
+  }, {
+    "name": "Tane Piper",
+    "email": "tane@pebblecode.com"
+  }],
+  "main": "index.js",
+  "scripts": {
+    "ping": "node examples/ping-federate.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.12.x"
+  },
+  "devDependencies": {
+    "hapi": "^8.8.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "jshint-stylish": "^2.0.1"
+  },
   "dependencies": {
-    "boom": "^2.6.0",
-    "lodash": "^2.4.1",
+    "boom": "^2.8.0",
+    "lodash": "^3.10.0",
     "xmldom": "^0.1.19",
-    "q": "^1.0.1",
-    "xml2js": "^0.4.4",
-    "xml-crypto": "^0.1.25",
-    "xmlbuilder": "^2.4.4",
+    "q": "^1.4.1",
+    "xml2js": "^0.4.9",
+    "xml-crypto": "^0.5.27",
+    "xmlbuilder": "^2.6.4",
     "xml-encryption": "^0.7.2"
   }
 }
