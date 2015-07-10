@@ -2,7 +2,13 @@
   "name": "hapi-auth-saml",
   "version": "1.0.0",
   "description": "SAML authentication scheme for Hapijs",
-  "keywords": ["saml", "hapi", "node", "login", "authentication"],
+  "keywords": [
+    "saml",
+    "hapi",
+    "node",
+    "login",
+    "authentication"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:pebblecode/hapi-auth-saml.git"
@@ -13,13 +19,16 @@
   },
   "homepage": "https://github.com/pebblecode/hapi-auth-saml",
   "author": "Pebble{code} <opensource@pebblecode.com>",
-  "contributors": [{
-    "name": "Tu Tak Tran",
-    "email": "ttt@pebblecode.com"
-  }, {
-    "name": "Tane Piper",
-    "email": "tane@pebblecode.com"
-  }],
+  "contributors": [
+    {
+      "name": "Tu Tak Tran",
+      "email": "ttt@pebblecode.com"
+    },
+    {
+      "name": "Tane Piper",
+      "email": "tane@pebblecode.com"
+    }
+  ],
   "main": "index.js",
   "scripts": {
     "ping": "node examples/ping-federate.js",
@@ -37,11 +46,11 @@
   "dependencies": {
     "boom": "^2.8.0",
     "lodash": "^3.10.0",
-    "xmldom": "^0.1.19",
     "q": "^1.4.1",
-    "xml2js": "^0.4.9",
     "xml-crypto": "^0.5.27",
+    "xml-encryption": "^0.7.2",
+    "xml2js": "^0.4.9",
     "xmlbuilder": "^2.6.4",
-    "xml-encryption": "^0.7.2"
+    "xmldom": "^0.1.19"
   }
 }
